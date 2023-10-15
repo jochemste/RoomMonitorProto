@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Monitoring Node
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/CHANGE/ME/runAsService.sh
+ExecStop=/CHANGE/ME/stopService.sh
+
+[Install]
+WantedBy=multi-user.target
