@@ -1,0 +1,5 @@
+grove.py==0.6
+rpi-ws281x==5.0.0
+RPi.GPIO==0.7.1
+seeed-python-dht==0.0.1
+smbus2==0.4.3
