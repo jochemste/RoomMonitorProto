@@ -1,4 +1,5 @@
 from .HttpServer import HttpServerProxy
+from .OLEDScreen import OLEDScreen
 
 from threading import Thread
 
@@ -8,6 +9,7 @@ class UserInterface():
         self.threads = []
 
         self.addInterface(HttpServerProxy("", 8000))
+        self.addInterface(OLEDScreen())
 
     def provide(self, data_dict):
         for iface in self.interfaces:
