@@ -4,7 +4,13 @@ Python script to run a temperature/humidity sensor and write the results to a in
 
 ## Install requirements
 
-Start by setting up your virtual environment
+Install system packages (most should already be installed)
+
+```
+sudo apt install -y git python3-dev i2c-tools python3-pil python3-pip python3-setuptools python3-rpi.gpio
+```
+
+Set up your virtual environment
 
 ```python3 -m venv .venv```
 
